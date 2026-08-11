@@ -237,7 +237,7 @@ section.ext .guide-block ul { padding-left: 20px; }
 }
 .authors-theses{
   counter-reset:authors-thesis;list-style:none;margin:0 0 22px;padding:0;display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;
+  grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;
 }
 .authors-theses li{
   counter-increment:authors-thesis;min-width:0;min-height:116px;padding:16px;border-radius:12px;
@@ -295,6 +295,7 @@ section.ext .guide-block ul { padding-left: 20px; }
 .authors-lime span{font-size:10.5px;line-height:1.2;max-width:150px;}
 
 @media (max-width:900px){
+  .authors-theses{grid-template-columns:repeat(2,minmax(0,1fr));}
   .authors-layout{grid-template-columns:1fr;}
   .authors-contact-card{display:grid;grid-template-columns:1fr auto;column-gap:24px;align-items:start;}
   .authors-contact-card .contact-overline,.authors-contact-card h3,.authors-contact-list,.authors-hashtag,.authors-lime{grid-column:1;}
@@ -4754,6 +4755,7 @@ document.addEventListener('click', function(e) {
     <li>Вернем парку управляемый прибыльный рост.</li>
     <li>Поможем не потерять сезон и заработать больше на существующем потоке.</li>
     <li>Дадим собственнику прозрачность, единую картину бизнеса и добьемся исполнения решений.</li>
+    <li>Проверим подозрения, закроем утечки и вернем контроль над деньгами.</li>
   </ol>
   <div class="authors-layout">
     <div class="authors-portraits">
