@@ -229,13 +229,24 @@ section.ext .guide-block ul { padding-left: 20px; }
     linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
   background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent 82%);
 }
-.authors-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:24px;}
-.authors-intro .authors-eyebrow{
-  color:var(--cur);font-size:10.5px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;
-}
-.authors-intro h2{margin:7px 0 0;font-size:clamp(30px,4vw,54px);line-height:.98;letter-spacing:-1.7px;}
+.authors-intro{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:30px;align-items:end;margin-bottom:20px;}
+.authors-intro h2{margin:0;font-size:clamp(30px,4vw,54px);line-height:.98;letter-spacing:-1.7px;}
 .authors-intro .authors-promise{
-  margin:0;max-width:360px;color:var(--faint);font-size:18px;line-height:1.25;text-align:right;text-wrap:balance;
+  margin:0;max-width:660px;color:#fff;font-size:clamp(18px,2.2vw,25px);font-weight:650;
+  line-height:1.22;letter-spacing:-.35px;text-align:left;text-wrap:balance;
+}
+.authors-theses{
+  counter-reset:authors-thesis;list-style:none;margin:0 0 22px;padding:0;display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;
+}
+.authors-theses li{
+  counter-increment:authors-thesis;min-width:0;min-height:116px;padding:16px;border-radius:12px;
+  background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.085);
+  color:var(--text);font-size:14px;font-weight:650;line-height:1.38;
+}
+.authors-theses li::before{
+  content:"0" counter(authors-thesis);display:block;margin-bottom:12px;color:var(--cur);
+  font-size:11px;font-weight:750;letter-spacing:.8px;
 }
 .authors-layout{display:grid;grid-template-columns:minmax(0,1.72fr) minmax(270px,.72fr);gap:18px;align-items:start;}
 .authors-portraits{
@@ -298,6 +309,9 @@ section.ext .guide-block ul { padding-left: 20px; }
   .authors-section{margin-top:26px;padding:20px 15px 24px;border-radius:14px;}
   .authors-intro{grid-template-columns:1fr;gap:11px;margin-bottom:18px;}
   .authors-intro .authors-promise{text-align:left;font-size:16px;}
+  .authors-theses{grid-template-columns:1fr;gap:7px;margin-bottom:18px;}
+  .authors-theses li{display:grid;grid-template-columns:28px 1fr;gap:9px;min-height:0;padding:12px 13px;font-size:13.5px;}
+  .authors-theses li::before{margin:1px 0 0;}
   .authors-portraits{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
   .author-card{min-height:0;}
   .author-card figcaption{left:12px;right:10px;bottom:12px;font-size:17px;line-height:1.05;overflow-wrap:anywhere;}
@@ -4734,8 +4748,13 @@ document.addEventListener('click', function(e) {
     <div>
       <h2 id="about-authors-title">Об авторах</h2>
     </div>
-    <p class="authors-promise">Ваша прибыль наша забота</p>
+    <p class="authors-promise">Находим, где парк недозарабатывает, запускаем изменения и измеряем эффект.</p>
   </header>
+  <ol class="authors-theses" aria-label="Что мы делаем">
+    <li>Вернем парку управляемый прибыльный рост.</li>
+    <li>Поможем не потерять сезон и заработать больше на существующем потоке.</li>
+    <li>Дадим собственнику прозрачность, единую картину бизнеса и добьемся исполнения решений.</li>
+  </ol>
   <div class="authors-layout">
     <div class="authors-portraits">
       <figure class="author-card author-card--anton">

@@ -3,8 +3,8 @@
   "status": "published",
   "artifact": {
     "filename": "index.html",
-    "sha256": "c85079a3a1fb04c4a9ca9ad3e2122ac310e47b67c2550d63f6bbea35c4981066",
-    "bytes": 1775090
+    "sha256": "8d12bee6b582f28a0ef033d278d0e72d4dc9a4e08da68476bc480b52d2fa3d74",
+    "bytes": 1776439
   },
   "period": {
     "week": "Н32 2026",
@@ -20,7 +20,7 @@
     "privacy": "donor identity clean; public author email and site intentionally included",
     "browser": "desktop/tablet/mobile passed; 16/16 navigation anchors",
     "wholeRubles": "24/24 passed on report core",
-    "authors": "source facts, contacts, embedded assets and generator parity passed",
+    "authors": "source facts, contacts, embedded assets, value proposition and generator parity passed",
     "final": "sealed report core preserved; authors extension verified"
   },
   "notice": "ДЕМО · обезличенный пример. Названия, события и показатели изменены. Денежные показатели рассчитаны с коэффициентом 0,5 и округлены до целых рублей; операционные показатели сохранены. Контакты и фотографии в разделе «Об авторах» опубликованы по предоставленной презентации."
