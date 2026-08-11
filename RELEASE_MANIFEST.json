@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "sealed",
+  "artifact": {
+    "filename": "weekly_demo_park_report_W32.html",
+    "sha256": "e8961c15de8f275e0440ec9edd0da6716e16fc91489a2c99117138b660f28a9b",
+    "bytes": 1335621
+  },
+  "period": {
+    "week": "Н32 2026",
+    "dates": "03–09.08.2026"
+  },
+  "identity": {
+    "park": "Северная звезда",
+    "city": "Светлореченск",
+    "fictional": true
+  },
+  "qa": {
+    "content": "80/80 passed",
+    "privacy": "30/30 passed",
+    "browser": "desktop/tablet/mobile passed",
+    "wholeRubles": "24/24 passed",
+    "final": "20/20 passed"
+  },
+  "notice": "ДЕМО · обезличенный пример. Названия, события и показатели изменены. Денежные показатели рассчитаны с коэффициентом 0,5 и округлены до целых рублей; операционные показатели сохранены. Half-money QA: 19/19 passed; whole-ruble QA: 24/24 passed."
+}
