@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "status": "sealed",
+  "status": "published",
   "artifact": {
-    "filename": "weekly_demo_park_report_W32.html",
-    "sha256": "e8961c15de8f275e0440ec9edd0da6716e16fc91489a2c99117138b660f28a9b",
-    "bytes": 1335621
+    "filename": "index.html",
+    "sha256": "287f89f52375cdaf389790fef48e7a4fd1fc4dde52d5e7db75b1d83635c1b183",
+    "bytes": 1775159
   },
   "period": {
     "week": "Н32 2026",
@@ -17,10 +17,11 @@
   },
   "qa": {
     "content": "80/80 passed",
-    "privacy": "30/30 passed",
-    "browser": "desktop/tablet/mobile passed",
-    "wholeRubles": "24/24 passed",
-    "final": "20/20 passed"
+    "privacy": "donor identity clean; public author email and site intentionally included",
+    "browser": "desktop/tablet/mobile passed; 16/16 navigation anchors",
+    "wholeRubles": "24/24 passed on report core",
+    "authors": "source facts, contacts, embedded assets and generator parity passed",
+    "final": "sealed report core preserved; authors extension verified"
   },
-  "notice": "ДЕМО · обезличенный пример. Названия, события и показатели изменены. Денежные показатели рассчитаны с коэффициентом 0,5 и округлены до целых рублей; операционные показатели сохранены. Half-money QA: 19/19 passed; whole-ruble QA: 24/24 passed."
+  "notice": "ДЕМО · обезличенный пример. Названия, события и показатели изменены. Денежные показатели рассчитаны с коэффициентом 0,5 и округлены до целых рублей; операционные показатели сохранены. Контакты и фотографии в разделе «Об авторах» опубликованы по предоставленной презентации."
 }
